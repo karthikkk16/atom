@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generated Questions</title>
+</head>
+<body>
+    <h1>Generated Questions</h1>
+    <p>Context:</p>
+    <p>{{ context }}</p>
+    <ul>
+        {% for question in questions %}
+            <li>{{ question }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question Generation</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1 class="title">Question Generation</h1>
+    <form action="/generate_questions" method="post" class="form">
+        <textarea name="context" rows="10" cols="50" class="text-input" placeholder="Enter your context here"></textarea>
+        <br>
+        <label for="question_type" class="label">Select a question type:</label>
+        <select name="question_type" class="select">
+            <option value="boolean">Boolean Questions</option>
+            <option value="mcq">Multiple Choice Questions</option>
+            <option value="fill_in_the_blank">Fill in the Blank</option>
+        </select>
+        <br>
+        <input type="submit" value="Generate Questions" class="submit-button">
+    </form>
+</body>
+</html>
